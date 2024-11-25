@@ -27,7 +27,7 @@
     background-color: #333; 
 }
 
-/* Hero Section */
+/* Hero Section */ /* Hero Section */
 .hero {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/images/finance-bg.jpg') no-repeat center center;
     background-size: cover;
