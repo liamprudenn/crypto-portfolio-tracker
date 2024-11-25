@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 
 // MongoDB Connection
 const mongoose = require('mongoose');
-let DB = require('./db'); // Import database configuration
+let DB = require('./db');
 
 // Connect to MongoDB using the URI from db.js
 mongoose.connect(DB.URI, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -45,7 +45,6 @@ app.use(function(req, res, next) {
 
 // error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 

@@ -38,7 +38,7 @@ router.get('/add', async (req, res, next) => {
 
 /* POST route for processing the Add Cryptocurrency form */
 router.post('/add', async (req, res) => {
-  console.log("Form data received:", req.body); // Debugging line
+  console.log("Form data received:", req.body); 
   try {
     let newCrypto = new Crypto({
       Name: req.body.Name,

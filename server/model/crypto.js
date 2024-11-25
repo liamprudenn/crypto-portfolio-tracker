@@ -1,6 +1,5 @@
 let mongoose = require('mongoose');
 
-// Define the schema for Crypto
 let cryptoSchema = mongoose.Schema({
     Name: String,
     PurchasePrice:Number, 
