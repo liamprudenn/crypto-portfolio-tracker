@@ -1,6 +1,55 @@
-<%- include Partials/header.ejs%>
-<%- include Partials/main_nav.ejs%>
-    <!--Main content-->
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-<%- include Partials/footer.ejs%>
+<%- include Partials/header.ejs %>
+<%- include Partials/main_nav.ejs %>
+
+<!-- Main Content -->
+<section class="hero text-center py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('/images/finance-bg.jpg') no-repeat center center; background-size: cover;">
+  <div class="container">
+    <h1 class="display-3 fw-bold text-light mb-4 outlined-text">Take Control of Your Financial Future</h1>
+    <p class="lead mb-5 text-muted">Track your crypto investments, watch them grow, and build wealth with real-time data at your fingertips.</p>
+    <a href="/portfolio" class="btn btn-dark btn-lg">View Your Portfolio</a>
+  </div>
+</section>
+
+<!-- Investment Overview Section-->
+<section class="investment-overview py-5" style="background-color: #f4f4f4;"> 
+  <div class="container">
+    <h2 class="text-center display-4 mb-5">Crypto Insights and Highlights</h2> 
+    <div class="row justify-content-center">
+      
+      <!-- Card 1: Total Portfolio Value -->
+      <div class="col-12 mb-4">
+        <div class="card shadow-lg border-0 bg-white text-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title">Motivational Quote</h5>
+            <p class="card-text display-6 fst-italic">"The best way to predict your future is to create it." – Peter Drucker</p>
+            <small class="text-muted">Inspiration for Investors</small>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 2: Bitcoin fact -->
+      <div class="col-12 mb-4">
+        <div class="card shadow-lg border-0 bg-white text-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title">Fun Fact About Bitcoin</h5>
+            <p class="card-text display-6">"Bitcoin’s supply is capped at 21 million coins."</p>
+            <small class="text-muted">A limit set to mimic scarcity</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: tips-->
+      <div class="col-12 mb-4">
+        <div class="card shadow-lg border-0 bg-white text-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title">Crypto Investment Tip</h5>
+            <p class="card-text display-6">"Diversify your portfolio to manage risks effectively."</p>
+            <small class="text-muted">Basic investment wisdom</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include Partials/footer.ejs %>

@@ -1,0 +1,36 @@
+<%- include ../Partials/header.ejs %>
+<%- include ../Partials/main_nav.ejs %>
+
+<!-- Edit Crypto Form -->
+<main class="container">
+  <div class="row">
+    <div class="offset-md-3 col-md-6">
+      <h1><%= title %></h1>
+      <form method="POST">
+        <div class="form-group">
+          <label for="Name">Cryptocurrency Name</label>
+          <input type="text" class="form-control" name="Name" id="Name" value="<%= crypto.Name %>" required>
+        </div>
+        <div class="form-group">
+          <label for="PurchasePrice">Purchase Price</label>
+          <input type="number" class="form-control" name="PurchasePrice" id="PurchasePrice" value="<%= crypto.PurchasePrice %>" required>
+        </div>
+        <div class="form-group">
+          <label for="Quantity">Quantity</label>
+          <input type="number" class="form-control" name="Quantity" id="Quantity" value="<%= crypto.Quantity %>" required>
+        </div>
+        <div class="form-group">
+          <label for="Description">Description</label>
+          <textarea class="form-control" name="Description" id="Description"><%= crypto.Description %></textarea>
+        </div>
+        <div class="form-group">
+          <label for="CurrentPrice">Current Market Price</label>
+          <input type="number" class="form-control" name="CurrentPrice" id="CurrentPrice" value="<%= crypto.CurrentPrice %>" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Update Investment</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<%- include ../Partials/footer.ejs %>

@@ -1,2 +1,4 @@
-module.exports={"URI":"mongodb://localhost:27017//crypto_portfolio"}
-
+module.exports = {
+    URI: 'mongodb://127.0.0.1:27017/crypto_portfolio' // Correct format
+  };
+  

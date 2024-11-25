@@ -1,15 +1,15 @@
-const mongoose = require("mongoose");
+let mongoose = require('mongoose');
 
-const cryptoModel = mongoose.Schema({
-    Name: { type: String, required: true },
-    PurchasePrice: { type: Number, required: true },
-    Quantity: { type: Number, required: true },
-    Description: { type: String, required: false },
-    CurrentPrice: { type: Number, required: false },
-    DateAdded: { type: Date, default: Date.now }  
-}, 
-{
-    collection: "crypto_portfolio" 
+// Define the schema for Crypto
+let cryptoSchema = mongoose.Schema({
+    Name: String,
+    PurchasePrice:Number, 
+    Quantity:Number,
+    Description: String,
+    CurrentPrice: Number, 
+}, {
+    collection: "crypto_portfolio"
 });
 
-module.exports = mongoose.model('Crypto', cryptoModel);
+// Export the model
+module.exports = mongoose.model('Crypto', cryptoSchema);
